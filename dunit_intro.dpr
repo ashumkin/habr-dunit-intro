@@ -6,7 +6,8 @@ program dunit_intro;
 
 uses
   TextTestRunner,
-  GUITestRunner;
+  GUITestRunner,
+  dunit_tests1;
 
 begin
   if IsConsole then
