@@ -5,13 +5,14 @@ program dunit_intro;
 {$ENDIF}
 
 uses
+  TestFramework,
   TextTestRunner,
   GUITestRunner,
   dunit_tests1;
 
 begin
   if IsConsole then
-    TextTestRunner.RunRegisteredTests
+    TextTestRunner.RunRegisteredTests(rxbHaltOnFailures)
   else
     GUITestRunner.RunRegisteredTests;
 end.
